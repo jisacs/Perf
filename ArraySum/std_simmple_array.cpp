@@ -33,7 +33,7 @@ cout << endl << endl <<endl <<endl <<endl <<endl <<endl;
 // Print result
 float nb_cycle = float(rdtsc()-start)/(nbLoop*image.nbPixel);
 cout << "===============================================================================" << endl;
-cout << "Float array RESULT cpu cycle:=" << nb_cycle<< " cycles/elem.   sum=" <<image.sum()<< endl;
+cout << "Float array RESULT cpu cycle:=" << nb_cycle<< " cycles/elem." << endl;
 cout << "===============================================================================" << endl;
 cout << endl;
 
@@ -44,7 +44,7 @@ for (size_t i(0); i < nbLoop; ++i){
 // Print result
 nb_cycle = float(rdtsc()-start)/(nbLoop*image.nbPixel);
 cout << "===============================================================================" << endl;
-cout << "Float array unloop 2  RESULT cpu cycle:=" << nb_cycle<< " cycles/elem.   vecSum=" << image.unloop2Sum() << endl;
+cout << "Float array unloop 2  RESULT cpu cycle:=" << nb_cycle<< " cycles/elem." << endl;
 cout << "===============================================================================" << endl;
 
 cout << endl;
@@ -56,7 +56,7 @@ for (size_t i(0); i < nbLoop; ++i){
 // Print result
 nb_cycle = float(rdtsc()-start)/(nbLoop*image.nbPixel);
 cout << "===============================================================================" << endl;
-cout << "Float array unloop 4  RESULT cpu cycle:=" << nb_cycle<< " cycles/elem.   vecSum=" << image.unloop4Sum() << endl;
+cout << "Float array unloop 4  RESULT cpu cycle:=" << nb_cycle<< " cycles/elem. " << endl;
 cout << "===============================================================================" << endl;
 
 cout << endl  << endl  << endl  << endl;
@@ -75,7 +75,7 @@ for (size_t i(0); i < nbLoop; ++i){
 // Print result
 nb_cycle = float(rdtsc()-start)/(nbLoop*imageList.peList.size());
 cout << "===============================================================================" << endl;
-cout << "std::list  RESULT cpu cycle:=" << nb_cycle<< " cycles/elem.   sum=" << imageList.listSum() << endl;
+cout << "std::list  RESULT cpu cycle:=" << nb_cycle<< " cycles/elem." << endl;
 cout << "===============================================================================" << endl;
 
 // Compute cpu_clycle
@@ -86,7 +86,7 @@ for (size_t i(0); i < nbLoop; ++i){
 // Print result
 nb_cycle = float(rdtsc()-start)/(nbLoop*imageList.peVector.size());
 cout << "===============================================================================" << endl;
-cout << "std::vector  RESULT cpu cycle:=" << nb_cycle<< " cycles/elem.   sum=" << imageList.vectorSum() << endl;
+cout << "std::vector  RESULT cpu cycle:=" << nb_cycle<< " cycles/elem." << endl;
 cout << "===============================================================================" << endl;
 
 
